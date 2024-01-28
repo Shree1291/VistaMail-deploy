@@ -12,7 +12,10 @@ const Connection = () => {
 
      const DB_URI = `mongodb://${USERNAME}:${PASSWORD}@vistamail.8izscyn.mongodb.net/vistamail?retryWrites=true&w=majority`;
     try{
-        mongoose.connect(DB_URI);
+       // mongoose.connect(DB_URI);
+      mongoose.connect(DB_URI, {
+        serverSelectionTimeoutMS: 5000
+      });
         mongoose.set('strictQuery', false);
         console.log("Database connected successfully!");
     } catch(err) {
