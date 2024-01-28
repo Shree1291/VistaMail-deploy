@@ -14,7 +14,7 @@ const Connection = () => {
     try{
        // mongoose.connect(DB_URI);
       mongoose.connect(DB_URI, {
-        serverSelectionTimeoutMS: 5000
+        serverSelectionTimeoutMS: 30000
       });
         mongoose.set('strictQuery', false);
         console.log("Database connected successfully!");
