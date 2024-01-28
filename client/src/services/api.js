@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URI = ''; 
+const API_URI = 'https://jungle-green-bullfrog-vest.cyclic.app'; 
 
 const API_ECHOINBOX = async (urlObject, payload={}, type='') => {
     return await axios ({
