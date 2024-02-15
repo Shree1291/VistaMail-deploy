@@ -41,8 +41,7 @@ const Header = ({toggleDrawer}) => {
     return (
         <StyledAppBar position="static">
             <Toolbar>
-                {toggleDrawer}
-                {toggleDrawer}
+                
                 <MenuIcon color = "action" onClick = {toggleDrawer}/> 
                 <img src = {VMlogo} alt="logo" style={{height: 60, widht: 60, marginLeft: 10, marginRight: 10}}/>
                 <SearchWrapper>
